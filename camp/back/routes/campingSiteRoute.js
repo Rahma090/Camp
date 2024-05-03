@@ -1,11 +1,14 @@
-const SiteController = require('../controllers/campingSite/addOffer')
-const Site = require('../controllers/campingSite/updateOffer')
+const AddSiteController = require('../controllers/campingSite/addOffer')
+const UpdateSiteController = require('../controllers/campingSite/updateOffer')
+const DeleteSiteController = require('../controllers/campingSite/deleteOffer')
 const SiteRouter = require('express').Router()
 
 //add
-SiteRouter.post('/offer', SiteController.newOffer)
+SiteRouter.post('/offer', AddSiteController.newOffer)
 //Update
-SiteRouter.put('/update/:id', Site.updateOffer)
+SiteRouter.put('/update/:id', UpdateSiteController.updateOffer)
+//Delete
+SiteRouter.delete('/delete/:id', DeleteSiteController.deleteOffer)
 
 
 module.exports = SiteRouter
