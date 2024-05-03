@@ -20,6 +20,20 @@ const newOffer = async (req, res) => {
     }
 }
 
+const updateOffer = async (req,res)=>{
+    const campingSiteId=req.params.id;
+    const offer=await campingSite.update(req.body,{
+        where:{campingSiteId}
+    })
+    res.json(offer);
+}
+
+const deleteOffer = (req,res)=>{
+    const campingSiteId = req.params.id
+        campingSite.destroy({where:{campingSiteId}})
+        res.json("offer deleted")
+      };
+
 module.exports = {
-    newOffer
+    newOffer, updateOffer, deleteOffer
 }
