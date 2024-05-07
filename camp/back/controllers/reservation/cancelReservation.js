@@ -1,16 +1,17 @@
 const reservations = require ('../../models/Client/reservation')
 
-const removeReservation = async (req, res) => {
+const cancelReservation = async (req, res) => {
     try {
-        const {reservationId} = req.body
-        await reservations.destroy({
+        const {reservationId} = req.params
+        const status = req.body.reservation
+        await reservations.update({
             where: {reservationId}
         })
-        res.status(200).json({message: 'Reservation deleted'})
+        res.status(200).json(status)
     } catch (error) {
         console.log(error)
         res.status(500).json({message: 'Internal server error'})
     }
 }
 
-module.exports = {removeReservation}
+module.exports = {cancelReservation}
