@@ -5,9 +5,14 @@ import Navbar from './Navbar.jsx';
 import './CSS/NewOffers.css';
 
 export const NewOffers = () => {
+   
     const [image, setImage] = useState([]);
     const [previewImage, setPreviewImage] = useState('');
     const fileInputRef = useRef(null);
+
+    
+
+    
 
     const addPicture = (e) => {
         const file = e.target.files?.[0];
@@ -47,15 +52,21 @@ export const NewOffers = () => {
           </div>
           <div className='absolute top-[300px] left-[300px] flex flex-wrap gap-20'>
           <div class="inputBox">
-            <input required="" type="text"/>
+            <input 
+          
+            required="" type="text"/>
             <span>Type Of Tent</span>
             </div>
             <div class="inputBox">
-            <input required="" type="number"/>
+            <input
+           
+             required="" type="number"/>
             <span>Number Of Guests</span>
             </div>
             <div class="inputBox">
-            <input required="" type="number"/>
+            <input
+            
+             required="" type="number"/>
             <span>Price For Night</span>
             </div>
           </div>
