@@ -43,7 +43,9 @@ Welcome contributions to enhance and customize this Full stack E-commerce websit
 ## About project
 
 **Camping** is an open-source software application designed to create an easy and simple platform for managing camping-related activities. It consists of two main services:
+
 **1-Client Service:** Allows users to search, filter, and view camping details, as well as apply to campsites and update their profiles.
+
 **2- Site Owner Service:** Enables site owners to post campsite offerings, manage programs, communicate with clients, and track sales, helping them to achieve their business goals.
 
 The purpose of this repository is to provide an educational and testing environment. The code is being developed in a proper and professional manner.
