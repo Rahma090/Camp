@@ -1,0 +1,64 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .cards .offers {
+    background-image: url('https://i.pinimg.com/originals/8c/ac/23/8cac23f6fbf59923d2af49ea3d5e912d.jpg');
+    background-size: cover;
+  }
+  
+  .cards .reservation {
+    background-image: url('https://i.pinimg.com/564x/ac/6a/95/ac6a951139e7395b457aa1053c4cf501.jpg');
+    background-size: cover;
+  }
+  
+  .cards .new {
+    background-image: url('https://i.pinimg.com/564x/1c/d8/e1/1cd8e110a7e9ac0f037eb8b190b23956.jpg');
+    background-size: cover;
+    
+  }
+  .cards .accessories {
+    background-image: url('https://i.pinimg.com/564x/8e/98/0b/8e980b1055ce66b0de14985b824c71a2.jpg');
+    background-size: cover;
+    
+  }
+  .cards .meals {
+    background-image: url('https://i.pinimg.com/originals/b2/c5/20/b2c52013608dff8851cd50e35e156baa.jpg');
+    background-size: cover;
+    
+  }
+  
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    color: rgb(1, 1, 1);
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }

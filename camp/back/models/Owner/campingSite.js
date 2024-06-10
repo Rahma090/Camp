@@ -1,6 +1,6 @@
 const sequelize = require('../../config/index.js');
 const Datatype = require('sequelize');
-const CampingOwner = require('./campingOwner.js');
+
 
 const CampingSite = sequelize.define('CampingSite',{
     campingSiteId: {
